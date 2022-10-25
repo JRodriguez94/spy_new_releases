@@ -1,0 +1,15 @@
+<div class="search-container animated fadeIn d-flex flex-wrap justify-content-center mt-4 p-2">
+    <div *ngFor="let item of items" class="card m-2 puntero" style="width: 18rem;">
+      <img (click)="goToArtist(item)" [src]="item.images | imgNotFound" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text">{{item.name}}</h5>
+        <div *ngIf="item.artists && item.artists.lenght > 0" else perro>
+            <span *ngFor="let artist of item.artists" class="badge rounded-pill text-bg-danger">{{artist.name}}</span>
+        </div>
+        <ng-template #perro>
+            <h5>perro :d</h5>
+        </ng-template>
+        
+      </div>
+    </div>
+</div>

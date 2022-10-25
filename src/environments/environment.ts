@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  token: 'BQArBKmcwy_1Fti3Xc9juGq9b5NQjymsFgPcP2fWGGJeMRaoCxJoQ0olX9aQn8su_0e8OXb_hBoqdC9U_cfsIiyxlzemRhY2Z4ZmQkyRS0zjcNSouaU'
 };
 
 /*
@@ -14,3 +15,5 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+
+
